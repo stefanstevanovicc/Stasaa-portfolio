@@ -1,0 +1,48 @@
+body {
+  background-image: url('pozadinaworkpage.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  /* other styles go here */
+}
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+.works-page {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+}
+.art-work {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  margin: 20px;
+  overflow: hidden;
+  cursor: pointer;
+}
+.art-work img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s;
+}
+.art-work .info {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 10px;
+  display: none;
+}
+.art-work:hover img {
+  transform: scale(1.1);
+}
+.art-work:hover .info {
+  display: block;
+}
